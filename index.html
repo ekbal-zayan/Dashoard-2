@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="fontawesome-free-5.6.3-web\css\all.css">
+  <link rel="stylesheet" href="js/jquery-ui.min.css">
+  <title>Dashboard Social HUB 2</title>
+</head>
+
+<body>
+  <header>
+    <article class="container-95">
+      <section>
+        <ul class="pagesName">
+          <li><img src="imgs/logo.png" alt="logo" class="logo"></li>
+          <li><a href="#"> Analytics</a> </li>
+          <li><a href="#" class="secondry-color">Compaigns</a></li>
+          <li><a href="#" class="secondry-color">Engagement</a></li>
+          <li><a href="#" class="secondry-color">Role&Permissions</a></li>
+          <li><a href="#" class="secondry-color">Organization</a></li>
+        </ul>
+      </section>
+      <section class="">
+        <ul class="pagesName">
+          <li class="notif"><a href="#"><i class="far fa-bell " id="bell"></i><span class="num">3</span></a></li>
+          <li class="notif"><a href="#"><i class="far fa-envelope " id="envelope"></i><span class="num">1</span></a></li>
+
+        </ul>
+
+      </section>
+    </article>
+  </header>
+  <div class="second-header">
+    <article class="container-95">
+      <ul class="pagesName">
+        <li>
+          <a href="#" class="rectangle">Dashboard</a>
+        </li>
+        <li>
+          <a href="#" class="secondry-color">Streams</a>
+        </li>
+        <li>
+          <a href="#" class="secondry-color">Comparative</a>
+        </li>
+        <li>
+          <a href="#" class="secondry-color">Influencers</a>
+        </li>
+      </ul>
+    </article>
+  </div>
+  <div class=" container-95">
+    <article class="humburger primary-color">
+      <section class="stream">
+        <i class="fas fa-bars "></i>
+        <h2 class="">Stream Monitoring Dashboard</h2>
+      </section>
+      <section class="icons">
+        <span class="add">
+          <i class="fas fa-plus"></i>
+          <span>Add</span>
+        </span>
+        <span class="export">
+          <i class="fas fa-share-square"></i>
+          <span>Export</span>
+        </span>
+        <span class="calender">
+          <input type="date" id="datepicker" name="date">
+          <label for="datepicker"><i class="fas fa-calendar-alt"></i> </label>
+
+          <span>Date</span>
+        </span>
+
+        <span class="filter">
+          <i class="fas fa-filter"></i>
+          <span>Filter by platform</span>
+          <i class="fas fa-sort-down"></i>
+        </span>
+      </section>
+
+    </article>
+  </div>
+  <main>
+    <article class="voda container-95  primary-color">
+      <section>
+        <h3>Stream</h3>
+        <form action="/action_page.php">
+          <select name="stream" class="secondry-color">
+            <option value="vodafone">Vodafone</option>
+            <option value="orange">Orange</option>
+            <option value="we">We</option>
+            <option value="etsalat">Etsalat</option>
+          </select>
+        </form>
+      </section>
+
+      <section>
+        <h3>Filter</h3>
+        <form action="/action_page.php">
+          <select name="filter" class="secondry-color">
+            <option value="none">None</option>
+            <option value="yes">Yes</option>>
+          </select>
+        </form>
+      </section>
+    </article>
+    <article class="grid container-95  primary-color">
+
+      <section class="comments">
+        <article class="stream">
+          <i class="fab fa-facebook-f"></i>
+          <h2 class="">Posts With Comments Count Over Time</h2>
+          <p class="secondry-color"><span>Last month</span><span>Aggregated by day</span></p>
+        </article>
+        <article><i class="fas fa-bars "></i></article>
+        <div id="chart_div"></div>
+      </section>
+
+      <section class="tweets">
+        <article class="stream">
+          <i class="fab fa-twitter"></i>
+          <h2 class="">Positive&Negative Tweets Over Time</h2>
+          <p class="secondry-color"><span>Last month</span><span>Aggregated by day</span></p>
+        </article>
+        <article><i class="fas fa-bars "></i></article>
+        <div id="chartContainer" style="height: 370px; max-width: 920px;margin: 15px 0px;
+        "></div>
+
+      </section>
+
+      <section class="fans">
+        <article class="stream">
+          <i class="fab fa-twitter"></i>
+          <h2 class="">Top Fans Widget</h2>
+          <p class="secondry-color"><span>Last month</span><span>Aggregated by day</span></p>
+        </article>
+        <article><i class="fas fa-bars "></i></article>
+        <ul>
+          <li>
+            <article class="copy">
+              <section>
+                <p>Ahmed Ali</p>
+              </section>
+              <section>
+                <ul>
+                  <li>38</li>
+                  <li><i class="fas fa-users"></i></li>
+                  <li>8</li>
+                  <li><i class="far fa-smile"></i></li>
+                  <li>61</li>
+                  <li><i class="far fa-frown"></i></li>
+                </ul>
+              </section>
+            </article>
+          </li>
+          <li>
+            <article class="copy">
+              <section>
+                <p>Ahmed Ali</p>
+              </section>
+              <section>
+                <ul>
+                  <li>38</li>
+                  <li><i class="fas fa-users"></i></li>
+                  <li>8</li>
+                  <li><i class="far fa-smile"></i></li>
+                  <li>61</li>
+                  <li><i class="far fa-frown"></i></li>
+                </ul>
+              </section>
+            </article>
+          </li>
+          <li>
+            <article class="copy">
+              <section>
+                <p>Ahmed Ali</p>
+              </section>
+              <section>
+                <ul>
+                  <li>38</li>
+                  <li><i class="fas fa-users"></i></li>
+                  <li>8</li>
+                  <li><i class="far fa-smile"></i></li>
+                  <li>61</li>
+                  <li><i class="far fa-frown"></i></li>
+                </ul>
+              </section>
+            </article>
+          </li>
+          <li>
+            <article class="copy">
+              <section>
+                <p>Ahmed Ali</p>
+              </section>
+              <section>
+                <ul>
+                  <li>38</li>
+                  <li><i class="fas fa-users"></i></li>
+                  <li>8</li>
+                  <li><i class="far fa-smile"></i></li>
+                  <li>61</li>
+                  <li><i class="far fa-frown"></i></li>
+                </ul>
+              </section>
+            </article>
+          </li>
+          <li>
+            <article class="copy">
+              <section>
+                <p>Ahmed Ali</p>
+              </section>
+              <section>
+                <ul>
+                  <li>38</li>
+                  <li><i class="fas fa-users"></i></li>
+                  <li>8</li>
+                  <li><i class="far fa-smile"></i></li>
+                  <li>61</li>
+                  <li><i class="far fa-frown"></i></li>
+                </ul>
+              </section>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section class="words">
+        <article class="stream">
+          <i class="fab fa-facebook-f"></i>
+          <h2 class="">Most Frequent Words</h2>
+          <p class="secondry-color"><span>Last month</span><span>Aggregated by day</span></p>
+        </article>
+        <article><i class="fas fa-bars "></i></article>
+        <div class="names">
+          <h2><b><i class="fas fa-hashtag"></i>AHMED_ZAKY</b></h2>
+          <h3><i class="fas fa-hashtag"></i>EGYPT</h3>
+          <h3><span><b>#</b>MONA_ZAKY</span><span>#ADEL_EMAM</span></h3>
+          <h3><i class="fas fa-hashtag"></i>CINEMA</h3>
+          <h2><b><i class="fas fa-hashtag"></i>CAIRO_FISTIVAL</b></h2>
+          <h3><i class="fas fa-hashtag"></i>MOHAMED_ABDEL_AZEEZ</h3>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- commnts
+ -->
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/canvasjs.min.js"></script>
+  <script type="text/javascript" src="js/comment.js"></script>
+  <script type="text/javascript" src="js/tweets.js"></script>
+
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
